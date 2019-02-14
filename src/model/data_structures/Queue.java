@@ -42,7 +42,7 @@ public class Queue<T> implements IQueue<T> {
 
 
 	/**
-	 * @return true si esta vacía, false de lo contrario
+	 * @return true si esta vacï¿½a, false de lo contrario
 	 */
 	public boolean isEmpty() {
 		return size == 0;
@@ -64,6 +64,7 @@ public class Queue<T> implements IQueue<T> {
 			first = nuevo;
 		}
 		else{
+			//first.cambiarSiguiente(nuevo);
 			nuevo.cambiarSiguiente(first);
 			first = nuevo;
 		}
