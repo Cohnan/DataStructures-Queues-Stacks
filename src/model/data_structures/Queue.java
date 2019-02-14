@@ -10,7 +10,7 @@ public class Queue<T> implements IQueue<T> {
 	/*
 	 * Variables
 	 */
-	private Nodo<T> first;	// Primer nodo en ser agregado
+	private Nodo<T> first;	// Ultimo nodo en ser agregado
 	private int size;		// Tamano de la cola
 
 	/*
@@ -64,7 +64,6 @@ public class Queue<T> implements IQueue<T> {
 			first = nuevo;
 		}
 		else{
-			//first.cambiarSiguiente(nuevo);
 			nuevo.cambiarSiguiente(first);
 			first = nuevo;
 		}
