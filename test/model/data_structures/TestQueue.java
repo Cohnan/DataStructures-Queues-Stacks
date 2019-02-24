@@ -154,7 +154,7 @@ public class TestQueue extends TestCase{
 				setUpEscenario2();
 				String dato = cola.dequeue();
 				assertTrue("La pila deberia deberia tener 1 elementos.", cola.size() == 1);
-				assertTrue("El elemento eliminado no es el esperado.", dato.equals("Elemento 2"));
+				assertTrue("El elemento eliminado no es el esperado.", dato.equals("Elemento 1"));
 			}
 
 		}
